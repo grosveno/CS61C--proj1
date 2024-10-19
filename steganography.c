@@ -23,7 +23,7 @@ Color *evaluateOnePixel(Image *image, int row, int col)
 {
 	Color* pixel = (Color*)malloc(sizeof(Color));
 	int B = image->image[row][col].B;
-	if (B & 2) {
+	if (B & 1) {
 		pixel->R = 255;
 		pixel->G = 255;
 		pixel->B = 255;
